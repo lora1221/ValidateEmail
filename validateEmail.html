@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validateEmail(str){
+        let regex = /^(\w)+@(\w)+(\.(\w)+)$/;
+        if (regex.test(str)){
+            return true;
+        }
+        return false;
+    }
+
+    var email = prompt("Enter email: ");
+    var result = validateEmail(email);
+    if (result) {
+        alert("It's a valid email");
+    } else {
+        alert("It's not a valid email");
+    }
+</script>
+</body>
+</html>
